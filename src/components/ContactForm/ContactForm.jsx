@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getCont } from '../../redux/selectors';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContactsThunk, getContactsThunk } from 'redux/contactsThunk';
+import { addContactsThunk, getContactsThunk } from '../../redux/contactsThunk';
 
 const ContactForm = () => {
   const dispatch = useDispatch();
