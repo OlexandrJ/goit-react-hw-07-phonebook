@@ -8,10 +8,11 @@ export const App = () => {
       style={{
         height: '100vh',
         display: 'flex',
-        justifyContent: 'center',
+        flexDirection: 'column',
         alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
+        paddingLeft: '50px',
+        fontSize: 20,
+        color: '#010101',
       }}
     >
       <h1>Phonebook</h1>

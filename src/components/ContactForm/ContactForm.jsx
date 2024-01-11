@@ -40,7 +40,7 @@ const ContactForm = () => {
     <form onSubmit={handleSubmit}>
       <label>
         Name
-        <input
+        <input 
           placeholder="Enter a name"
           value={name}
           type="text"
