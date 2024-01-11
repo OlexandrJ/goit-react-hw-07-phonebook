@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { getCont } from '../../redux/selectors';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContactsThunk, getContactsThunk } from '../../redux/contactsThunk';
+import css from './form.css';
 
 const ContactForm = () => {
   const dispatch = useDispatch();
@@ -38,7 +39,7 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>
+      <label className={css.formLabel}>
         Name
         <input 
           placeholder="Enter a name"
@@ -51,7 +52,7 @@ const ContactForm = () => {
           onChange={handleChange}
         />
       </label>
-      <label>
+      <label className={css.formLabel}>
         Number
         <input
           placeholder="Enter a number"

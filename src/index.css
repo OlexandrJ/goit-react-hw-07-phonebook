@@ -19,6 +19,5 @@ p {
   display: flex;
   gap: 20px;
   align-items: center;
-  justify-content: center;
   margin-right: 20px;
 }
